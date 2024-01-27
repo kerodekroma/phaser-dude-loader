@@ -24,9 +24,13 @@ jobs:
 
       - name: build
         run: |
-          echo "Building project"
-          npm run build_prod && echo "DONE"
+          echo "=====> Installing dependencies"
+          npm install
+          echo "=====> Building project"
+          npm run build_prod
+          echo "=====> Let's ZIP it!"
           zip -j -r phaser_dude_loader_demo.zip build
+          echo "=====> DONE!"
 
       - name: Generate release tag
         id: generate_release_tag
