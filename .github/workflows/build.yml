@@ -17,10 +17,12 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
 
-      - name: build
+      - name: starting using nodejs
         uses: actions/setup-node@v4
         width:
           node-version: 18
+
+      - name: build
         run: |
           echo "Building project"
           npm run build_prod && echo "DONE"
