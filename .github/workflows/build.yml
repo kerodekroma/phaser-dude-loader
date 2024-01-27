@@ -19,7 +19,7 @@ jobs:
 
       - name: starting using nodejs
         uses: actions/setup-node@v4
-        width:
+        with:
           node-version: 18
 
       - name: build
