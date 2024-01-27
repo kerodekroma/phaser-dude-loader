@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "esbuild": "esbuild",
     "start": "esbuild src/main.ts --bundle --minify --outdir=public/js --watch --servedir=public",
-    "build": "esbuild src/main.ts --bundle --minify --outfile=build/js/build.min.js"
+    "build": "esbuild src/main.ts --bundle --minify --outfile=build/js/build.min.js",
+    "build_prod": "rm -fr build && mkdir build && cp -fr public/index.prod.html build/index.html && cp -fr public/assets build/assets && npm run build"
   },
   "keywords": [
     "phaser",
