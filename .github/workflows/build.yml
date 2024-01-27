@@ -29,7 +29,7 @@ jobs:
           echo "=====> Building project"
           npm run build_prod
           echo "=====> Let's ZIP it!"
-          zip -j -r phaser_dude_loader_demo.zip build
+          zip -r phaser_dude_loader_demo.zip build
           echo "=====> DONE!"
 
       - name: Generate release tag
