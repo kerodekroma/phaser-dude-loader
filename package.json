@@ -1,0 +1,25 @@
+{
+  "name": "phaser-dude-loader",
+  "version": "1.0.0",
+  "description": "This is a project made with phaser using esbuild with ts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "esbuild": "esbuild",
+    "start": "esbuild src/main.ts --bundle --minify --outdir=public/js --watch --servedir=public",
+    "build": "esbuild src/main.ts --bundle --minify --outfile=build/js/build.min.js"
+  },
+  "keywords": [
+    "phaser",
+    "loader",
+    "asset"
+  ],
+  "author": "kerodekroma",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.6.2",
+    "esbuild": "^0.19.3",
+    "esbuild-plugin-tsc": "^0.4.0",
+    "phaser": "^3.60.0"
+  }
+}

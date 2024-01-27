@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "strict": true,
+    "noImplicitAny": true,
+    "noEmit": true,
+    "allowJs": true,
+    "importHelpers": true,
+    "moduleResolution": "Node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "baseUrl": "src",
+    "paths": {
+      "@scenes/*": ["./scenes/*"]
+    },
+    "typeRoots": [
+      "node_modules/@types",
+      "node_module/phaser/types",
+      "custom_typings"
+    ],
+    "types": ["phaser"]
+  },
+  "include": ["src/**/*"]
+}
