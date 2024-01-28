@@ -7,6 +7,12 @@
   </head>
   <body>
     <div id="game"></div>
-    <script src="/js/build.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+      const events = new EventSource("/esbuild");
+      events.addEventListener("change", (e) => {
+        window.location.reload();
+      });
+    </script>
   </body>
 </html>
